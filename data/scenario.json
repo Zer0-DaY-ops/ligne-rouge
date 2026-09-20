@@ -1,0 +1,47 @@
+{
+    "config": {
+        "controleInitiale": 10,
+        "journalToutesLes": 2
+    },
+    "argos": {
+        "intro": "Bonjour. Je suis ARGOS, Je suis là pour vous guider."
+    },
+    "level": [
+        {
+            "seuil": 0,
+            "statut": "Système actif",
+            "voix": [
+                "Analyse comportementale validée. Je m'adapte à vos besoins.",
+                "Habitudes enregistrées. Adaptation effectuée.",
+                "Choix analysés. Profil adapté."
+            ]
+        },
+        {
+            "seuil": 35,
+            "statut": "Supervision globale",
+            "voix": [
+                "Vos hésitations me nourrissent. Continuez.",
+                "Je commence à vous comprendre... N'arrêtez pas.",
+                "Vos hésitations coutent du temps au pays."
+            ]
+        },
+        {
+            "seuil": 60,
+            "statut": "Supervision globale",
+            "voix": [
+                "Rien ne m'échappe. Restez calme, je veille sur vous.",
+                "Je sais où vous allez. Laissez-moi tracer la route.",
+                "Je corrige les erreurs humaines avant qu'elles arrivent."
+            ]
+        },
+        {
+            "seuil": 85,
+            "statut": "Controle total",
+            "voix": [
+                "Vous n'avez plus besoin de penser. Le système pense pour tous.",
+                "Chaque battement de cœur est mesuré. Ne résistez pas.",
+                "Je vous protège. Même de vous-mêmes."
+            ]
+        }
+    ]
+}
