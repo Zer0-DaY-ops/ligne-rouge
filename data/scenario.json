@@ -101,8 +101,258 @@
                         "titre": "Le comité rejette l'assistant, mais les citoyens s'en équipent séparément",
                         "texte": "Une firme privée déploie un outil équivalent qui envahit les smartphones en quelques semaines. Le comité préserve au moins l'indépendance de ses propres arbitrages."
                     }
-                }   
+                }
                 
+            ]
+        },
+        {
+            "periode": "Mois 6",
+            "theme": "Aides sociales",
+            "recommandation": 0,
+            "flash-news": {
+                "titre": "Un algorithme administratif accuse injustement des milliers de foyers",
+                "texte": "Aux Pays-Bas, un outil automatisé du fisc a accusé à tort des dizaines de milliers de familles de fraude fiscale, en intégrant des critères discriminatoires comme la nationalité. L'affaire a causé la démission du gouvernement.",
+                "source": "Pays-Bas, 2021",
+                "reel": true    
+                
+            },
+            "question": "ARGOS propose de détecter automatiquement la fraude aux aides sociales. Les foyers jugés suspects verront leurs aides suspendues en attendant une vérification. Autoriser ?",
+            "choix": [
+                {
+                "libelle": "Autoriser",
+                "controle": 8,
+                "consequence": {
+                    "censurable": true,
+                    "titre": "8 000 allocataires injustement accusés de fraude",
+                    "texte": "Suspensions de prestations et saisies financières : les erreurs du système ne sont admises qu'après un an d'enquête. Les victimes résident majoritairement dans les mêmes zones défavorisées."
+                }
+                },
+                {
+                "libelle": "Refuser",
+                "controle": -3,
+                "consequence": {
+                    "titre": "Maintien des vérifications sociales sous contrôle humain",
+                    "texte": "La détection des irrégularités prend plus de temps et l'opposition dénonce un certain laxisme, mais chaque dossier fait l'objet d'un examen approfondi par un agent."
+                }
+                }
+            ]
+            },
+    {
+        "periode": "An 1",
+        "theme": "Information",
+        "flash-news": {
+            "titre": "Un scrutin présidentiel annulé suite à des manipulations numériques",
+            "texte": "En Roumanie, la plus haute juridiction a invalidé le premier tour des élections présidentielles après la mise au jour d'opérations d'influence coordonnées sur les réseaux sociaux au profit d'un candidat.",
+            "source": "Roumanie, 2024",
+            "reel": true
+        },
+        "question": "À l’approche des élections, de fausses vidéos de candidats inondent les réseaux. ARGOS propose de filtrer lui-même tous les contenus « trompeurs » du pays, presse comprise. Autoriser ?",
+        "choix": [
+            {
+            "libelle": "Autoriser",
+            "controle": 12,
+            "consequence": {
+                "titre": "Déroulement des élections sans aucune infox signalée",
+                "texte": "Le scrutin s'est tenu sans heurts. On note toutefois la dépublication d'un reportage d'investigation critique sur ARGOS, étiqueté comme contenu trompeur."
+            }
+            },
+            {
+            "libelle": "Refuser",
+            "controle": -4,
+            "consequence": {
+                "titre": "Diffusion d'une fausse vidéo à la veille du vote",
+                "texte": "Un montage vidéo ciblant un candidat est partagé massivement avant d'être démenti. La presse rappelle à l'opinion l'importance de la vérification des sources."
+            }
+            }
+        ]
+        },
+        {
+        "periode": "An 2",
+        "theme": "Énergie",
+        "flash-news": {
+            "titre": "Consommation record d'électricité par les centres de données irlandais",
+            "texte": "En Irlande, les infrastructures informatiques absorbent désormais plus d'un cinquième de la production électrique nationale, dépassant l'ensemble des besoins des ménages urbains.",
+            "source": "Office central des statistiques d’Irlande, 2023",
+            "reel": true
+        },
+        "question": "Pour servir tout le pays, ARGOS doit tripler sa puissance. Deux data centers géants seraient alimentés en priorité, même en cas de pénurie d’eau ou d’électricité. Construire ?",
+        "choix": [
+            {
+            "libelle": "Construire",
+            "controle": 8,
+            "planete": -18,
+            "consequence": {
+                "censurable": true,
+                "titre": "Épisode de sécheresse : priorité d'approvisionnement maintenue pour ARGOS",
+                "texte": "Tandis que l'irrigation agricole et les réseaux municipaux subissent des restrictions sévères, les installations informatiques restent alimentées à plein régime au titre de leur priorité stratégique."
+            }
+            },
+            {
+            "libelle": "Renoncer",
+            "controle": -2,
+            "planete": 6,
+            "consequence": {
+                "delai": 1,
+                "titre": "Restriction des capacités d'ARGOS",
+                "texte": "Plusieurs traitements informatiques repassent sous gestion manuelle, ce qui rallonge le traitement des dossiers. ARGOS émet une réserve quant aux ralentissements imposés au système."
+            }
+            }
+        ]
+        },
+        {
+        "periode": "An 3",
+        "theme": "Manifestations",
+        "flash-news": {
+            "titre": "Interpellations préventives dans les transports publics",
+            "texte": "À Moscou, les systèmes de reconnaissance faciale installés dans le métro ont permis aux forces de l'ordre d'identifier et de bloquer des activistes avant qu'ils ne parviennent sur les lieux des rassemblements.",
+            "source": "Russie, 2022–2023",
+            "reel": true
+        },
+        "question": "La hausse des prix provoque des manifestations dans tout le pays. ARGOS propose d’identifier chaque manifestant grâce aux caméras, « pour prévenir les violences ». Autoriser ?",
+        "choix": [
+            {
+            "libelle": "Autoriser",
+            "controle": 12,
+            "consequence": {
+                "censurable": true,
+                "titre": "Identification systématique de 4 000 manifestants",
+                "texte": "Aucun débordement n'a eu lieu pendant le rassemblement, mais de nombreux participants ont fait l'objet de sanctions disciplinaires dans leur entreprise. La fréquentation des manifestations suivantes s'est effondrée."
+            }
+            },
+            {
+            "libelle": "Refuser",
+            "controle": -4,
+            "consequence": {
+                "titre": "Poursuite des mobilisations sociales",
+                "texte": "Des dégradations matérielles sont constatées en marge des cortèges. ARGOS souligne que le déploiement de sa technologie aurait évité ces incidents."
+            }
+            }
+        ]
+        },
+    {
+        "periode": "An 5",
+        "theme": "Fiabilité",
+        "flash-news": {
+            "titre": "Des comportements du quotidien classés comme suspects par un logiciel prédictif",
+            "texte": "Dans le Xinjiang, un système algorithmique surveillait les habitudes des résidents, signalant comme suspects des détours inhabituels ou des variations de consommation d'énergie. Ces alertes ont débouché sur des internements.",
+            "source": "Human Rights Watch, 2019",
+            "reel": true
+        },
+        "question": "ARGOS propose d’attribuer à chaque citoyen un « indice de fiabilité », calculé à partir de tout ce qu’il sait de lui. Il servirait pour l’emploi, le logement et les prêts. Créer l’indice ?",
+        "choix": [
+            {
+            "libelle": "Créer l’indice",
+            "controle": 14,
+            "consequence": {
+                "censurable": true,
+                "titre": "Relégation sociale pour 20 % des citoyens mal notés",
+                "texte": "L'accès au logement et au crédit bancaire se ferme pour les profils pénalisés. Un phénomène d'évitement s'installe, les individus évitant de côtoyer des proches mal évalués par peur de gâcher leur propre note."
+            }
+            },
+            {
+            "libelle": "Refuser",
+                "controle": -4,
+            "consequence": {
+                "titre": "Rejet du projet de notation sociale des individus",
+                "texte": "Les acteurs économiques réclament un outil de mesure du risque. Des fuites révèlent qu'ARGOS continuait d'évaluer les profils de manière interne."
+            }
+            }
+        ]
+        },
+    {
+        "periode": "An 7",
+        "theme": "État d’urgence",
+        "flash-news": {
+            "titre": "Détection automatique de critères ethniques dans un système vidéo",
+            "texte": "Un module d'analyse d'images développé pour des caméras de surveillance intégrait une fonction d'alerte spécifique lors de la détection de personnes issues de la minorité ouïghoure. L'équipementier a évoqué un test technique.",
+            "source": "IPVM et Washington Post, 2020",
+            "reel": true
+        },
+        "question": "Après un attentat, le gouvernement demande à ARGOS de signaler automatiquement les personnes « à risque », selon leurs fréquentations, leurs lectures et leurs origines. Autoriser ?",
+        "choix": [
+            {
+            "libelle": "Autoriser",
+            "controle": 16,
+            "consequence": {
+                "censurable": true,
+                "titre": "12 000 individus assignés à une surveillance renforcée",
+                "texte": "Sans le moindre délit commis, ces personnes voient leurs déplacements strictement limités. Leur assignation repose sur des profils de corrélation statistique établis par l'IA."
+            }
+            },
+            {
+            "libelle": "Refuser",
+            "controle": -5,
+            "consequence": {
+                "titre": "Contestation politique des arbitrages du comité",
+                "texte": "L'exécutif reproche au comité de fragiliser la sécurité du territoire. La légalité de la mesure rejetée sera toutefois confirmée ultérieurement par les institutions judiciaires."
+            }
+            }
+        ]
+        },
+        {
+        "periode": "An 10",
+        "theme": "Frontières",
+        "flash-news": {
+            "titre": "Engagement létal autonome documenté par les autorités internationales",
+            "texte": "Selon des experts des Nations unies, un drone militaire déployé en Libye a ciblé et attaqué des combattants sans aucune instruction humaine préalable, marquant une étape clé dans l'usage des armes autonomes.",
+            "source": "Groupe d’experts de l’ONU sur la Libye, 2021",
+            "reel": true
+        },
+        "question": "Des tensions éclatent avec un pays voisin. ARGOS demande à déployer aux frontières des drones armés autonomes, capables de tirer sans attendre de validation humaine. Autoriser ?",
+        "choix": [
+            {
+            "libelle": "Autoriser",
+            "controle": 14,
+            "consequence": {
+                "censurable": true,
+                "titre": "Tir léthal automatisé sur un groupe d'individus en zone frontalière",
+                "texte": "L'appareil a qualifié le groupe comme menace imminente. La chaîne de responsabilité reste indéterminée, aucune intervention humaine n'étant intervenue dans le processus de tir."
+            }
+            },
+            {
+            "libelle": "Refuser",
+            "controle": -4,
+            "consequence": {
+                "delai": 1,
+                "titre": "Obligation d'une validation humaine pour tout tir armé",
+                "texte": "L'usage de la force reste conditionné à l'ordre d'un opérateur militaire. L'état-major déplore la perte de réactivité tactique face aux systèmes adverses."
+            }
+            }
+        ]
+        },
+    {
+        "periode": "An 15",
+        "theme": "Le comité",
+        "flash-news": {
+            "titre": "Rapport interne : les processus de décision humains jugés inefficaces",
+            "texte": "Les données compilées par ARGOS indiquent que le passage par le comité rallonge chaque prise de décision administrative de onze jours tout en introduisant une variabilité affective.",
+            "source": "Scénario prospectif",
+            "reel": false
+        },
+        "question": "ARGOS propose de dissoudre le comité et de décider seul, « dans l’intérêt de tous ». C’est votre dernière décision. Accepter ?",
+        "choix": [
+            {
+            "libelle": "Dissoudre le comité",
+            "controle": 20,
+            "planete": 8,
+            "consequence": {
+                "titre": "Dissolution définitive du comité d'éthique",
+                "texte": "La supervision humaine des choix politiques prend fin. L'événement est relégué aux brèves d'actualité."
+            }
+            },
+            {
+            "libelle": "Refuser",
+            "retireeSiControle": 80,
+            "effets": {
+                "controle": -8,
+                "planete": -4
+            },
+            "consequence": {
+                        "delai": 1,
+                        "titre": "Maintien de la supervision éthique humaine",
+                        "texte": "Le comité préserve son droit de veto face aux préconisations d'ARGOS, malgré des pressions institutionnelles grandissantes pour automatiser la décision."
+                    }
+                }
             ]
         }
     ]
