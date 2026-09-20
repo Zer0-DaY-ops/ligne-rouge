@@ -37,24 +37,18 @@ L’objectif est d’obtenir une arborescence de ce genre :
 
 
 
+```
 ligne-rouge/
-├── index.html         
-├── css/style.css      
+├── index.html            la page : trois écrans et le journal
+├── css/style.css         l'apparence, la sphère et l'alerte rouge
 ├── js/
-│   ├── main.js         
-│   ├── jeu.js          
-│   ├── sphere.js      
-│   ├── journal.js     
-│   ├── chargement.js   
-│   ├── fin.js          
-│   ├── musique.js      
-│   ├── preferences.js  
-│   └── outils.js       
-├── data/scenario.json  
-├── audio/              
-├── fonts/             
-└── tests/jeu.test.js   
+│   ├── jeu.js            la logique : classe Partie (aucun lien avec la page)
+│   └── main.js           le lien entre la logique et la page
+├── data/scenario.json    tout le contenu du jeu
+├── fonts/               
+└── tests/partie.test.js  tests de la logique
 
+```
 ## Sources des faits réels
 
 À compléter…
