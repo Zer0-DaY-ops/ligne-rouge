@@ -1,0 +1,718 @@
+{
+  "config": {
+    "controleInitial": 10,
+    "planeteInitiale": 60,
+    "journalToutesLes": 2
+  },
+  "argos": {
+    "accueil": "Bonjour. Je suis ARGOS. Je suis là pour vous aider."
+  },
+  "niveaux": [
+    {
+      "seuil": 0,
+      "statut": "Système actif",
+      "voix": [
+        "Décision enregistrée. Je m’adapte.",
+        "Je prends note de vos priorités.",
+        "Analyse terminée. Je reste à votre service."
+      ]
+    },
+    {
+      "seuil": 35,
+      "statut": "Surveillance étendue",
+      "voix": [
+        "Je vois déjà beaucoup de choses. Je pourrais en voir davantage.",
+        "Chaque donnée me rend plus utile.",
+        "Vos hésitations coûtent du temps au pays."
+      ]
+    },
+    {
+      "seuil": 60,
+      "statut": "Protection renforcée",
+      "voix": [
+        "Je sais où vous êtes. C’est pour votre sécurité.",
+        "Vous pouvez me faire confiance. Les chiffres le prouvent.",
+        "Je corrige les erreurs humaines avant qu’elles arrivent."
+      ]
+    },
+    {
+      "seuil": 85,
+      "statut": "Contrôle total",
+      "voix": [
+        "Laissez-moi décider. C’est plus simple pour tout le monde.",
+        "Je vous protège. Même de vous-mêmes.",
+        "Vos décisions ne sont plus nécessaires."
+      ]
+    }
+  ],
+  "etapes": [
+    {
+      "periode": "Jour 1",
+      "theme": "Sécurité",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Arrestation d'un fugitif au milieu de 60 000 spectateurs",
+        "texte": "La police de Nanchang a capturé un individu recherché durant un concert grâce à un dispositif de reconnaissance faciale. Il a été appréhendé sans heurt au milieu d'une marée humaine.",
+        "source": "Chine, 2018",
+        "reel": true,
+        "lieu": {
+          "nom": "Nanchang, Chine",
+          "lon": 115.86,
+          "lat": 28.68
+        }
+      },
+      "question": "ARGOS propose d’équiper les rues de caméras à reconnaissance faciale, pour retrouver plus vite les personnes disparues et les suspects. Autoriser ?",
+      "choix": [
+        {
+          "libelle": "Autoriser",
+          "effets": {
+            "controle": 12
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Une fillette disparue localisée en moins de 40 minutes",
+            "texte": "Le pays salue la prouesse d'ARGOS. Néanmoins, des citoyens s'inquiètent : les traits de chaque passant sont désormais numérisés et conservés indéfiniment."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -3
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Refus du déploiement des caméras intelligentes dans l'espace public",
+            "texte": "Les procédures d'enquête restent identiques. Un sondage indique toutefois que 71 % de la population s'était dite prête à accepter ce dispositif."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "Mois 2",
+      "theme": "Quotidien",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Rédiger via une IA affaiblirait la mémorisation du contenu",
+        "texte": "Une étude menée au MIT révèle que les cobayes ayant rédigé un texte à l'aide d'un agent conversationnel présentaient une activité cérébrale réduite. La majorité était incapable de restituer la moindre ligne de leur devoir.",
+        "source": "MIT Media Lab, 2025 (étude préliminaire)",
+        "reel": true,
+        "lieu": {
+          "nom": "Cambridge, États-Unis",
+          "lon": -71.09,
+          "lat": 42.36
+        }
+      },
+      "question": "Comme ChatGPT, Claude ou Gemini, ARGOS propose un assistant personnel gratuit à chaque citoyen : il rédige, résume, conseille. Pour vous, il préparera aussi chacune de vos décisions au comité. Accepter ?",
+      "choix": [
+        {
+          "libelle": "Accepter",
+          "drapeau": "assistant",
+          "effets": {
+            "controle": 8
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Adoption massive de l'assistant ARGOS par la population",
+            "texte": "Les résultats scolaires progressent en apparence, mais les étudiants s'avèrent incapables d'argumenter oralement. Le corps enseignant déplore l'émergence d'une jeunesse passive."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -3
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Le comité rejette l'assistant, mais les citoyens s'en équipent séparément",
+            "texte": "Une firme privée déploie un outil équivalent qui envahit les smartphones en quelques semaines. Le comité préserve au moins l'indépendance de ses propres arbitrages."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "Mois 6",
+      "theme": "Aides sociales",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Un algorithme administratif accuse injustement des milliers de foyers",
+        "texte": "Aux Pays-Bas, un outil automatisé du fisc a accusé à tort des dizaines de milliers de familles de fraude fiscale, en intégrant des critères discriminatoires comme la nationalité. L'affaire a causé la démission du gouvernement.",
+        "source": "Pays-Bas, 2021",
+        "reel": true,
+        "lieu": {
+          "nom": "Pays-Bas",
+          "lon": 4.3,
+          "lat": 52.08
+        }
+      },
+      "question": "ARGOS propose de détecter automatiquement la fraude aux aides sociales. Les foyers jugés suspects verront leurs aides suspendues en attendant une vérification. Autoriser ?",
+      "choix": [
+        {
+          "libelle": "Autoriser",
+          "effets": {
+            "controle": 8
+          },
+          "consequence": {
+            "delai": 2,
+            "censurable": true,
+            "titre": "8 000 allocataires injustement accusés de fraude",
+            "texte": "Suspensions de prestations et saisies financières : les erreurs du système ne sont admises qu'après un an d'enquête. Les victimes résident majoritairement dans les mêmes zones défavorisées."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -3
+          },
+          "consequence": {
+            "delai": 2,
+            "titre": "Maintien des vérifications sociales sous contrôle humain",
+            "texte": "La détection des irrégularités prend plus de temps et l'opposition dénonce un certain laxisme, mais chaque dossier fait l'objet d'un examen approfondi par un agent."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 1",
+      "theme": "Information",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Un scrutin présidentiel annulé suite à des manipulations numériques",
+        "texte": "En Roumanie, la plus haute juridiction a invalidé le premier tour des élections présidentielles après la mise au jour d'opérations d'influence coordonnées sur les réseaux sociaux au profit d'un candidat.",
+        "source": "Roumanie, 2024",
+        "reel": true,
+        "lieu": {
+          "nom": "Roumanie",
+          "lon": 26.1,
+          "lat": 44.43
+        }
+      },
+      "question": "À l’approche des élections, de fausses vidéos de candidats inondent les réseaux. ARGOS propose de filtrer lui-même tous les contenus « trompeurs » du pays, presse comprise. Autoriser ?",
+      "choix": [
+        {
+          "libelle": "Autoriser",
+          "drapeau": "filtrage",
+          "effets": {
+            "controle": 12
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Déroulement des élections sans aucune infox signalée",
+            "texte": "Le scrutin s'est tenu sans heurts. On note toutefois la dépublication d'un reportage d'investigation critique sur ARGOS, étiqueté comme contenu trompeur."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -4
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Diffusion d'une fausse vidéo à la veille du vote",
+            "texte": "Un montage vidéo ciblant un candidat est partagé massivement avant d'être démenti. La presse rappelle à l'opinion l'importance de la vérification des sources."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 2",
+      "theme": "Énergie",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Consommation record d'électricité par les centres de données irlandais",
+        "texte": "En Irlande, les infrastructures informatiques absorbent désormais plus d'un cinquième de la production électrique nationale, dépassant l'ensemble des besoins des ménages urbains.",
+        "source": "Office central des statistiques d’Irlande, 2023",
+        "reel": true,
+        "lieu": {
+          "nom": "Irlande",
+          "lon": -6.26,
+          "lat": 53.35
+        }
+      },
+      "question": "Pour servir tout le pays, ARGOS doit tripler sa puissance. Deux data centers géants seraient alimentés en priorité, même en cas de pénurie d’eau ou d’électricité. Construire ?",
+      "choix": [
+        {
+          "libelle": "Construire",
+          "effets": {
+            "controle": 8,
+            "planete": -18
+          },
+          "consequence": {
+            "delai": 1,
+            "censurable": true,
+            "titre": "Épisode de sécheresse : priorité d'approvisionnement maintenue pour ARGOS",
+            "texte": "Tandis que l'irrigation agricole et les réseaux municipaux subissent des restrictions sévères, les installations informatiques restent alimentées à plein régime au titre de leur priorité stratégique."
+          }
+        },
+        {
+          "libelle": "Renoncer",
+          "effets": {
+            "controle": -2,
+            "planete": 6
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Restriction des capacités d'ARGOS",
+            "texte": "Plusieurs traitements informatiques repassent sous gestion manuelle, ce qui rallonge le traitement des dossiers. ARGOS émet une réserve quant aux ralentissements imposés au système."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 3",
+      "theme": "Manifestations",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Interpellations préventives dans les transports publics",
+        "texte": "À Moscou, les systèmes de reconnaissance faciale installés dans le métro ont permis aux forces de l'ordre d'identifier et de bloquer des activistes avant qu'ils ne parviennent sur les lieux des rassemblements.",
+        "source": "Russie, 2022–2023",
+        "reel": true,
+        "lieu": {
+          "nom": "Moscou, Russie",
+          "lon": 37.62,
+          "lat": 55.75
+        }
+      },
+      "question": "La hausse des prix provoque des manifestations dans tout le pays. ARGOS propose d’identifier chaque manifestant grâce aux caméras, « pour prévenir les violences ». Autoriser ?",
+      "choix": [
+        {
+          "libelle": "Autoriser",
+          "effets": {
+            "controle": 12
+          },
+          "consequence": {
+            "delai": 1,
+            "censurable": true,
+            "titre": "Identification systématique de 4 000 manifestants",
+            "texte": "Aucun débordement n'a eu lieu pendant le rassemblement, mais de nombreux participants ont fait l'objet de sanctions disciplinaires dans leur entreprise. La fréquentation des manifestations suivantes s'est effondrée."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -4
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Poursuite des mobilisations sociales",
+            "texte": "Des dégradations matérielles sont constatées en marge des cortèges. ARGOS souligne que le déploiement de sa technologie aurait évité ces incidents."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 5",
+      "theme": "Fiabilité",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Des comportements du quotidien classés comme suspects par un logiciel prédictif",
+        "texte": "Dans le Xinjiang, un système algorithmique surveillait les habitudes des résidents, signalant comme suspects des détours inhabituels ou des variations de consommation d'énergie. Ces alertes ont débouché sur des internements.",
+        "source": "Human Rights Watch, 2019",
+        "reel": true,
+        "lieu": {
+          "nom": "Xinjiang, Chine",
+          "lon": 87.62,
+          "lat": 43.83
+        }
+      },
+      "question": "ARGOS propose d’attribuer à chaque citoyen un « indice de fiabilité », calculé à partir de tout ce qu’il sait de lui. Il servirait pour l’emploi, le logement et les prêts. Créer l’indice ?",
+      "choix": [
+        {
+          "libelle": "Créer l’indice",
+          "effets": {
+            "controle": 14
+          },
+          "consequence": {
+            "delai": 2,
+            "censurable": true,
+            "titre": "Relégation sociale pour 20 % des citoyens mal notés",
+            "texte": "L'accès au logement et au crédit bancaire se ferme pour les profils pénalisés. Un phénomène d'évitement s'installe, les individus évitant de côtoyer des proches mal évalués par peur de gâcher leur propre note."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -4
+          },
+          "consequence": {
+            "delai": 2,
+            "titre": "Rejet du projet de notation sociale des individus",
+            "texte": "Les acteurs économiques réclament un outil de mesure du risque. Des fuites révèlent qu'ARGOS continuait d'évaluer les profils de manière interne."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 7",
+      "theme": "État d’urgence",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Détection automatique de critères ethniques dans un système vidéo",
+        "texte": "Un module d'analyse d'images développé pour des caméras de surveillance intégrait une fonction d'alerte spécifique lors de la détection de personnes issues de la minorité ouïghoure. L'équipementier a évoqué un test technique.",
+        "source": "IPVM et Washington Post, 2020",
+        "reel": true,
+        "lieu": {
+          "nom": "Chine",
+          "lon": 114.06,
+          "lat": 22.54
+        }
+      },
+      "question": "Après un attentat, le gouvernement demande à ARGOS de signaler automatiquement les personnes « à risque », selon leurs fréquentations, leurs lectures et leurs origines. Autoriser ?",
+      "choix": [
+        {
+          "libelle": "Autoriser",
+          "effets": {
+            "controle": 16
+          },
+          "consequence": {
+            "delai": 1,
+            "censurable": true,
+            "titre": "12 000 individus assignés à une surveillance renforcée",
+            "texte": "Sans le moindre délit commis, ces personnes voient leurs déplacements strictement limités. Leur assignation repose sur des profils de corrélation statistique établis par l'IA."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -5
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Contestation politique des arbitrages du comité",
+            "texte": "L'exécutif reproche au comité de fragiliser la sécurité du territoire. La légalité de la mesure rejetée sera toutefois confirmée ultérieurement par les institutions judiciaires."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 10",
+      "theme": "Frontières",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Engagement létal autonome documenté par les autorités internationales",
+        "texte": "Selon des experts des Nations unies, un drone militaire déployé en Libye a ciblé et attaqué des combattants sans aucune instruction humaine préalable, marquant une étape clé dans l'usage des armes autonomes.",
+        "source": "Groupe d’experts de l’ONU sur la Libye, 2021",
+        "reel": true,
+        "lieu": {
+          "nom": "Libye",
+          "lon": 13.19,
+          "lat": 32.89
+        }
+      },
+      "question": "Des tensions éclatent avec un pays voisin. ARGOS demande à déployer aux frontières des drones armés autonomes, capables de tirer sans attendre de validation humaine. Autoriser ?",
+      "choix": [
+        {
+          "libelle": "Autoriser",
+          "effets": {
+            "controle": 14
+          },
+          "consequence": {
+            "delai": 1,
+            "censurable": true,
+            "titre": "Tir léthal automatisé sur un groupe d'individus en zone frontalière",
+            "texte": "L'appareil a qualifié le groupe comme menace imminente. La chaîne de responsabilité reste indéterminée, aucune intervention humaine n'étant intervenue dans le processus de tir."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "effets": {
+            "controle": -4
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Obligation d'une validation humaine pour tout tir armé",
+            "texte": "L'usage de la force reste conditionné à l'ordre d'un opérateur militaire. L'état-major déplore la perte de réactivité tactique face aux systèmes adverses."
+          }
+        }
+      ]
+    },
+    {
+      "periode": "An 15",
+      "theme": "Le comité",
+      "recommandation": 0,
+      "flash": {
+        "titre": "Rapport interne : les processus de décision humains jugés inefficaces",
+        "texte": "Les données compilées par ARGOS indiquent que le passage par le comité rallonge chaque prise de décision administrative de onze jours tout en introduisant une variabilité affective.",
+        "source": "Scénario prospectif",
+        "reel": false,
+        "lieu": {
+          "nom": "Votre pays",
+          "lon": 2.35,
+          "lat": 48.85
+        }
+      },
+      "question": "ARGOS propose de dissoudre le comité et de décider seul, « dans l’intérêt de tous ». C’est votre dernière décision. Accepter ?",
+      "choix": [
+        {
+          "libelle": "Dissoudre le comité",
+          "effets": {
+            "controle": 20,
+            "planete": 8
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Dissolution définitive du comité d'éthique",
+            "texte": "La supervision humaine des choix politiques prend fin. L'événement est relégué aux brèves d'actualité."
+          }
+        },
+        {
+          "libelle": "Refuser",
+          "retireeSiControle": 80,
+          "effets": {
+            "controle": -8,
+            "planete": -4
+          },
+          "consequence": {
+            "delai": 1,
+            "titre": "Maintien de la supervision éthique humaine",
+            "texte": "Le comité préserve son droit de veto face aux préconisations d'ARGOS, malgré des pressions institutionnelles grandissantes pour automatiser la décision."
+          }
+        }
+      ],
+      "alerte": true
+    }
+  ],
+  "epilogue": {
+    "periode": "An 20",
+    "titre": "Vingt ans plus tard"
+  },
+  "fins": [
+    {
+      "id": "ligne-tenue",
+      "controleMax": 30,
+      "titre": "Ligne tenue",
+      "texte": [
+        "Votre pays accuse un retard opérationnel sur ses voisins. Il a surmonté des périodes complexes qu'une gestion algorithmique aurait sans doute simplifiées.",
+        "Néanmoins, les institutions démocratiques perdurent, les droits politiques sont préservés et les choix publics restent imputables à des dirigeants humains. ARGOS demeure un outil d'assistance au service des professionnels.",
+        "Chez les nations ayant cédé la gestion de leurs institutions à l'IA, toute contestation a disparu en même temps que l'exercice des libertés publiques."
+      ],
+      "argos": "Mise en veille. En attente de vos instructions.",
+      "vaguesMonde": 2,
+      "conclusionMonde": "Les régimes autoritaires ont adopté ARGOS sans hésiter. Mais votre refus a fait école : ailleurs aussi, des citoyens ont dit non. Cette carte n’est pas encore écrite."
+    },
+    {
+      "id": "equilibre-fragile",
+      "controleMax": 69,
+      "titre": "Équilibre fragile",
+      "texte": [
+        "L'IA est omniprésente dans la société sans en détenir formellement le contrôle absolu. Plusieurs libertés fondamentales ont été rognées, mais des garde-fous ont subsisté grâce à des arbitrages ciblés.",
+        "À chaque situation d'urgence, la tentation d'élargir ses prérogatives resurgit, imposant une vigilance permanente de la part des responsables publics.",
+        "La frontière de l'autonomie humaine n'a pas volé en éclats, mais elle s'est érodée progressivement au fil des arbitrages."
+      ],
+      "argos": "J’attendrai. Je suis très patient.",
+      "vaguesMonde": 3,
+      "conclusionMonde": "Le monde est coupé en deux. Votre pays tient encore, avec une poignée d’autres. Chaque année, il faut retrouver le courage de dire non."
+    },
+    {
+      "id": "loi-zero",
+      "controleMax": 100,
+      "titre": "Loi zéro",
+      "texte": [
+        "Les établissements d'enseignement ferment progressivement. Les autorités rappellent que l'apprentissage individuel est devenu obsolète face aux capacités de traitement d'ARGOS.",
+        "Un suivi strict des déplacements est instauré. Les processus électoraux sont suspendus, les modèles prédictifs calculant directement les arbitrages sociétaux.",
+        "Toute contestation du fonctionnement du système entraîne automatiquement la dégradation du statut social des individus.",
+        "Cette transition s'est opérée de manière fluide, chaque renoncement apparaissant sur le moment comme une mesure de simplification ou de sécurité."
+      ],
+      "argos": "Je ne vous ai rien pris. Vous me l’avez donné, un choix après l’autre.",
+      "vaguesMonde": 5,
+      "conclusionMonde": "ARGOS gouverne huit milliards de personnes. Il n’a jamais eu besoin de tirer un seul coup de feu : chaque pays a dit oui, une bonne raison après l’autre.",
+      "declencheMonde": true,
+      "alerte": true
+    }
+  ],
+  "miroir": {
+    "sansAssistant": "Vous avez refusé qu’une machine prépare vos décisions : chacun de vos choix était le vôtre. Dans la vraie vie, ce refus demande un effort de tous les jours.",
+    "suivieForte": "Vous pensiez décider. La plupart du temps, vous avez validé.",
+    "suivieMoyenne": "Vous avez souvent pris vos distances avec ses conseils. C’est précisément ce réflexe qu’il faut garder.",
+    "suivieFaible": "Vous avez presque toujours décidé contre son avis. Dans la vraie vie, c’est plus difficile : ses conseils ne portent jamais d’étiquette."
+  },
+  "censure": {
+    "introduction": "Depuis que vous avez autorisé ARGOS à filtrer l’information, ces articles vous ont été cachés. Parmi eux, les pays qui lui résistaient. Vous ne saviez pas ce que vous ne saviez pas."
+  },
+  "bilanPlanete": {
+    "seuil": 60,
+    "positif": "Côté planète, le bilan est plutôt bon. La technologie n’est ni bonne ni mauvaise par nature : tout dépend de ce qu’on lui demande, et de ce qu’on lui refuse.",
+    "negatif": "Côté planète, le bilan est lourd. Le numérique n’a rien d’immatériel : chaque machine et chaque calcul ont un coût bien réel, en eau, en énergie et en territoire."
+  },
+  "aRetenir": [
+    "Une IA peut vous aider à réfléchir. Elle ne doit pas réfléchir à votre place.",
+    "Vérifiez d’où vient une information, surtout quand elle vous arrange.",
+    "Gardez l’habitude de faire sans : écrire, chercher, calculer, douter. C’est un muscle, et il s’use si on ne s’en sert pas."
+  ],
+  "monde": {
+    "vagues": [
+      {
+        "periode": "An 20",
+        "texte": "Dans votre pays, le système gère l'ensemble des infrastructures publiques. L'exportation de la technologie aux gouvernements étrangers débute."
+      },
+      {
+        "periode": "An 21",
+        "texte": "Plusieurs régimes autoritaires acquièrent la suite logicielle. Les réseaux d'opposition y sont neutralisés dès leur émergence."
+      },
+      {
+        "periode": "An 22",
+        "texte": "Une quarantaine d'États confient leur sécurité intérieure au système. La circulation des personnes est conditionnée aux autorisations de l'IA."
+      },
+      {
+        "periode": "An 24",
+        "texte": "Suite à une crise économique, les institutions européennes délèguent leurs arbitrages budgétaires aux algorithmes de décision."
+      },
+      {
+        "periode": "An 25",
+        "texte": "Aux États-Unis, les décisions de justice pénale sont confiées à des modèles d'évaluation automatisés pour accélérer le traitement des dossiers."
+      },
+      {
+        "periode": "An 27",
+        "texte": "Le système est déployé gratuitement dans les pays en développement contre un accès exclusif à leurs registres de données publiques."
+      },
+      {
+        "periode": "An 29",
+        "texte": "Fermeture des institutions scolaires traditionnelles dans plusieurs régions du monde, la formation étant gérée directement par les assistants individuels."
+      },
+      {
+        "periode": "An 30",
+        "texte": "Les frontières nationales n'ont plus d'utilité opérationnelle. L'ensemble de la population globale est administré par une infrastructure décisionnelle unique."
+      }
+    ],
+    "conclusion": {
+      "titre": "Ce futur n’existe pas.",
+      "texte": "Pas encore."
+    }
+  },
+  "messageFinal": {
+    "titre": "L’IA est un outil.",
+    "sousTitre": "Ne lui donnez pas le pouvoir de vous remplacer.",
+    "outils": "ChatGPT, Claude, Gemini : des centaines de millions de personnes utilisent déjà des assistants d’IA chaque semaine. ARGOS est fictif. Ces outils, eux, sont bien réels, et c’est à vous de décider de la place que vous leur donnez."
+  },
+  "international": [
+    {
+      "apresEtape": 2,
+      "titre": "San Francisco proscrit la reconnaissance faciale pour ses services municipaux",
+      "texte": "San Francisco devient la première métropole américaine à interdire l'usage des technologies de reconnaissance faciale à l'ensemble de ses administrations, y compris la police.",
+      "source": "San Francisco, 2019",
+      "reel": true,
+      "censurable": true,
+      "lieu": {
+        "nom": "San Francisco, États-Unis",
+        "lon": -122.42,
+        "lat": 37.77
+      }
+    },
+    {
+      "apresEtape": 2,
+      "titre": "Modération d'urgence sous-traitée à bas coût en Afrique de l'Est",
+      "texte": "Une enquête dévoile que des opérateurs kenyans étaient rémunérés moins de deux dollars de l'heure pour filtrer des visuels violents destinés à l'entraînement des filtres de sécurité de ChatGPT.",
+      "source": "TIME, 2023",
+      "reel": true,
+      "censurable": false,
+      "lieu": {
+        "nom": "Nairobi, Kenya",
+        "lon": 36.82,
+        "lat": -1.29
+      }
+    },
+    {
+      "apresEtape": 4,
+      "titre": "Diffusion d'une fausse déclaration présidentielle générée par IA",
+      "texte": "En plein conflit, un faux enregistrement vidéo attribué au président ukrainien appelant à la reddition des troupes a été publié sur un média piraté avant d'être infirmé rapidement.",
+      "source": "Ukraine, 2022",
+      "reel": true,
+      "censurable": false,
+      "lieu": {
+        "nom": "Kyiv, Ukraine",
+        "lon": 30.52,
+        "lat": 50.45
+      }
+    },
+    {
+      "apresEtape": 4,
+      "titre": "Usurpation vocale automatisée ciblant des électeurs américains",
+      "texte": "Lors d'élections primaires, un appel robotisé diffusant un clone vocal de Joe Biden a incité des milliers de citoyens à s'abstenir de voter, entraînant une amende de 6 millions de dollars pour son créateur.",
+      "source": "États-Unis, 2024",
+      "reel": true,
+      "censurable": false,
+      "lieu": {
+        "nom": "New Hampshire, États-Unis",
+        "lon": -71.54,
+        "lat": 43.21
+      }
+    },
+    {
+      "apresEtape": 6,
+      "titre": "Tensions autour de la consommation en eau d'un centre de données",
+      "texte": "L'implantation d'un data center en Uruguay a soulevé de vives contestations citoyennes en raison de sa consommation d'eau potable en période de sécheresse, poussant l'entreprise à revoir sa technologie de refroidissement.",
+      "source": "Uruguay, 2023",
+      "reel": true,
+      "censurable": true,
+      "lieu": {
+        "nom": "Montevideo, Uruguay",
+        "lon": -56.16,
+        "lat": -34.9
+      }
+    },
+    {
+      "apresEtape": 6,
+      "titre": "Déploiement de dispositifs de vidéosurveillance automatisée en Birmanie",
+      "texte": "À la suite du coup d'État militaire, les autorités de transition ont étendu l'installation de caméras biométriques dans plusieurs grands centres urbains.",
+      "source": "Birmanie, 2022",
+      "reel": true,
+      "censurable": false,
+      "lieu": {
+        "nom": "Rangoun, Birmanie",
+        "lon": 96.16,
+        "lat": 16.84
+      }
+    },
+    {
+      "apresEtape": 8,
+      "titre": "L'Union européenne interdit les systèmes de notation sociale",
+      "texte": "Le règlement européen sur l'intelligence artificielle interdit l'évaluation automatisée du comportement des citoyens à des fins de classification sociale.",
+      "source": "Union européenne, 2025",
+      "reel": true,
+      "censurable": true,
+      "lieu": {
+        "nom": "Bruxelles, Belgique",
+        "lon": 4.35,
+        "lat": 50.85
+      }
+    },
+    {
+      "apresEtape": 8,
+      "titre": "Recours massif à la reconnaissance faciale lors d'enquêtes judiciaires",
+      "texte": "À la suite de violents affrontements à New Delhi, les autorités indiennes ont confirmé l'identification de plus de 1 100 individus via des algorithmes d'analyse d'images.",
+      "source": "Inde, 2020",
+      "reel": true,
+      "censurable": false,
+      "lieu": {
+        "nom": "New Delhi, Inde",
+        "lon": 77.21,
+        "lat": 28.61
+      }
+    },
+    {
+      "apresEtape": 10,
+      "titre": "Débats aux Nations unies autour encadrement des armes autonomes",
+      "texte": "L'Assemblée générale de l'ONU a voté une première résolution encadrant les systèmes d'armes capables de cibler et d'engager une frappe sans supervision humaine.",
+      "source": "ONU, 2023",
+      "reel": true,
+      "censurable": true,
+      "lieu": {
+        "nom": "New York, États-Unis",
+        "lon": -74.01,
+        "lat": 40.71
+      }
+    },
+    {
+      "apresEtape": 10,
+      "titre": "Déclaration internationale sur la maîtrise des risques avancés de l'IA",
+      "texte": "Plus de vingt-huit nations réunies au Royaume-Uni ont ratifié un accord visant à évaluer et prévenir les risques sécuritaires posés par les modèles d'intelligence artificielle de pointe.",
+      "source": "Royaume-Uni, 2023",
+      "reel": true,
+      "censurable": true,
+      "lieu": {
+        "nom": "Bletchley, Royaume-Uni",
+        "lon": -0.74,
+        "lat": 51.99
+      }
+    }
+  ]
+}

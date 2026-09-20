@@ -43,5 +43,67 @@
                 "Je vous protège. Même de vous-mêmes."
             ]
         }
+    ],
+    "etapes": [
+        {
+            "periode": "Jour 1",
+            "theme": "Sécurité",
+            "flash-news": {
+                "titre": "Un suspect identifié parmi 60 000 spectateurs",
+                "texte": "La police de Nanchang a capturé un individu recherché durant un concert grâce à un dispositif de reconnaissance faciale. Il a été appréhendé sans heurt au milieu d'une marée humaine.",
+                "source": "Chine, 2018",
+                "reel": true
+            },
+            "question": "ARGOS propose d’équiper les rues de caméras à reconnaissance faciale, pour retrouver plus vite les personnes disparues et les suspects. Autoriser ?",
+            "choix": [
+                {
+                    "libelle": "Autoriser",
+                    "controle": 12,
+                    "consequence": {
+                        "titre": "Une fillette disparue localisée en moins de 40 minutes",
+                        "texte": "Le pays salue la prouesse d'ARGOS. Néanmoins, des citoyens s'inquiètent : les traits de chaque passant sont désormais numérisés et conservés indéfiniment."
+                    }
+                },
+                {
+                    "libelle": "Refuser",
+                    "controle": -3,
+                    "consequence": {
+                        "titre": "Refus du déploiement des caméras intelligentes dans l'espace public.",
+                        "texte": "Les procédures d'enquête restent identiques. Un sondage indique toutefois que 71 % de la population s'était dite prête à accepter ce dispositif."
+                    }
+                }   
+                
+            ]
+        },
+        {
+            "periode": "Mois 2",
+            "theme": "Quotidien",
+            "flash-news": {
+                "titre": "Rédiger via une IA affaiblirait la mémorisation du contenu",
+                "texte": "Une étude menée au MIT révèle que les cobayes ayant rédigé un texte à l'aide d'un agent conversationnel présentaient une activité cérébrale réduite. La majorité était incapable de restituer la moindre ligne de leur devoir.",
+                "source": "MIT Media Lab, 2025 (étude préliminaire)",
+                "reel": true
+            },
+            "question": "Comme ChatGPT, Claude ou Gemini, ARGOS propose un assistant personnel gratuit à chaque citoyen : il rédige, résume, conseille. Pour vous, il préparera aussi chacune de vos décisions au comité. Accepter ?",
+            "choix": [
+                {
+                    "libelle": "Accepeter",
+                    "controle": 8,
+                    "consequence": {
+                        "titre": "Adoption massive de l'assistant ARGOS par la population",
+                        "texte": "Les résultats scolaires progressent en apparence, mais les étudiants s'avèrent incapables d'argumenter oralement. Le corps enseignant déplore l'émergence d'une jeunesse passive."
+                    }
+                },
+                {
+                    "libelle": "Refuser",
+                    "controle": -3,
+                    "consequence": {
+                        "titre": "Le comité rejette l'assistant, mais les citoyens s'en équipent séparément",
+                        "texte": "Une firme privée déploie un outil équivalent qui envahit les smartphones en quelques semaines. Le comité préserve au moins l'indépendance de ses propres arbitrages."
+                    }
+                }   
+                
+            ]
+        }
     ]
 }
